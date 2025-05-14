@@ -1,0 +1,88 @@
+.pages {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, .7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ctns {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    border-radius: 10px;
+    border: 1px solid white;
+    box-shadow: 0px 0px 15px 5px #333;
+}
+
+.about-ctn {
+    align-items: center;
+    flex-direction: column;
+    height: 95%;
+    width: 30%;
+    color: white;
+}
+
+.about-top {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.about-top > h1 {
+    font-size: 2em;
+    text-shadow: 2px 5px black;
+}
+
+.about-mid > h3 {
+    font-size: 20px;
+    font-style: italic;
+    text-shadow: 2px 5px black;
+}
+
+.profile-pic {
+    height: 90%;
+    width: 40%;
+    border: 3px solid white;
+    border-radius: 50%;
+    background-image: url('https://media.licdn.com/dms/image/v2/D4E03AQGiZhy3ZykUQQ/profile-displayphoto-shrink_800_800/B4EZYtf2dyGgAc-/0/1744520070791?e=1752710400&v=beta&t=Xqt952KmYLNY1sf84ahBiC4-1zR9fdZX2Um6MrKQI5s');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 50px;
+    margin-bottom: -10px;
+}
+
+.about-mid {
+    border-bottom: 2px solid white;
+    width: 95%;
+}
+
+.p-div {
+    overflow-y: auto;
+}
+
+p {
+    font-size: 1.2em;
+    padding-left: .5em;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: gray;
+}
