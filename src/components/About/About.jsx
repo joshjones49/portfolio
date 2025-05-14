@@ -13,7 +13,7 @@ const About = () => {
 
         <div className='about-mid' >
             <h3>Front-end: JavaScript | React | Angular</h3>
-            <h3>Back-end: Node | Java | Spring-Boot</h3>
+            <h3>Back-end: Node | Express | Java | Spring-Boot | Postgres</h3>
         </div>
 
         <div className='p-div' >
