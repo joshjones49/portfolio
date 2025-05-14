@@ -60,7 +60,6 @@
     animation-duration: 10s;
     animation-name: spin;
     animation-timing-function: ease-in-out;
-    animation-delay: 2s;
     animation-iteration-count: infinite;
 }
 
