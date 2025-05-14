@@ -57,6 +57,21 @@
 
 .react-logo {
     color: rgb(48, 207, 255);
+    animation-duration: 10s;
+    animation-name: spin;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+    0% {
+    }
+
+    100% {
+        transform: rotate(360deg);
+        color: rgb(48, 207, 255);
+    }
 }
 
 .spring-logo {
@@ -67,3 +82,4 @@ li {
     color: white;
     margin: 1em;
 }
+
