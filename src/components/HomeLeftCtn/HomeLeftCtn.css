@@ -1,0 +1,23 @@
+.left-ctn{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 40vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    height: 70%;
+    width: 50%;
+    border: 2px solid white;
+    border-radius: 1em;
+    backdrop-filter: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(var(--dark-red) 55%, var(--black));
+    animation: slideInLeft;
+    animation-duration: 1s;
+}

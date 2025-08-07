@@ -1,4 +1,3 @@
-# Cook Systems Fast Track Portfolio project
+# My Software Developer Porfolio
 
-## This is an assignment from the Cook Systems coding program where I had to create a portfolio
-
+### Created using React and libraries such as React-Router-Dom and React-Icons
