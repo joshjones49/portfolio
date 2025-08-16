@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Micro+5&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 html, body{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Poppins;
 }
 
 #root{
@@ -10,6 +14,7 @@ html, body{
     --dark-red: #89023eff;
     --gunmetal: #30343fff;
     --black: #1b2021ff;
+    --light-purple: rgb(202, 0, 202);
 }
 
 @keyframes slideInLeft{ 
@@ -34,4 +39,33 @@ html, body{
         transform: translateX(100);
         opacity: 1;
     }
+}
+
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.app{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: -10;
+    overflow: hidden;
+    background-color: black;
+}
+
+.text-grad{
+    background: linear-gradient(goldenrod, var(--light-purple) 90%);
+    background-clip: text;
+    color: transparent;
 }

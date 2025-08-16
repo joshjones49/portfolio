@@ -1,0 +1,38 @@
+.top-bar{
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-left: 1em;
+    position: relative;
+}
+
+.logo{
+    height: 45px;
+    width: 45px;
+    margin-top: 30px;
+}
+
+.link-ctn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    height: 100%;
+}
+
+.link{
+    background: linear-gradient(goldenrod, var(--light-purple) 90%);
+    background-clip: text;
+    color: transparent;
+    cursor: pointer;
+    font-size: .7rem;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    text-decoration: none;
+}
+
+.link:hover{
+    transform: scale(1.2);
+    color: white;
+}

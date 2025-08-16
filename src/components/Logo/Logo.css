@@ -1,0 +1,12 @@
+.logo{
+    background: radial-gradient(circle at 200% 10%, red, black);
+    height: 600px;
+    width: 600px;
+    border: 20px ridge white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 200px;
+    text-shadow: 15px 15px 2px black;
+}
