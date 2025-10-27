@@ -20,7 +20,7 @@ const Info = () => {
           <FaLinkedin />
         </a>
 
-        <Link to='/contacts'>
+        <Link to='/contact'>
           <SiGmail className='social gmail' />
         </Link>
         </div>

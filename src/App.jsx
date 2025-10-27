@@ -1,11 +1,12 @@
 import { Route, Routes } from 'react-router-dom'
 
 // component imports
-import Projects from './pages/Projects/Projects'
-import Home from './pages/Home/Home'
-import Navbar from './components/Navbar/Navbar'
-import Resume from './pages/Resume/Resume'
-import Info from './components/Info/Info'
+import Projects from './pages/Projects/Projects.jsx'
+import Home from './pages/Home/Home.jsx'
+import Navbar from './components/Navbar/Navbar.jsx'
+import Resume from './pages/Resume/Resume.jsx'
+import Info from './components/Info/Info.jsx'
+import Contact from './pages/Contact/Contact.jsx'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/resume' element={<Resume />} />
+          <Route path='/contact' element={<Contact />} />
         </Routes>
 
       </div>

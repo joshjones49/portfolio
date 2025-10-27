@@ -15,31 +15,31 @@ const Resume = () => {
         <h2>PROJECTS</h2>
         <h4>SmartCard | Full-Stack</h4>
         <ul>
-          {resumeObj.SmartCardList.map(item => (
-            <li>{item}</li>
+          {resumeObj.SmartCardList.map((item, index) => (
+            <li key={index}>{item}</li>
           ))}
         </ul>
 
         <h4>Project Management Dashboard | Full-Stack</h4>
         <ul>
-          {resumeObj.PMDList.map(item => (
-            <li>{item}</li>
+          {resumeObj.PMDList.map((item, index) => (
+            <li key={index}>{item}</li>
           ))}
         </ul>
 
         <h2>PROFESSIONAL EXPERIENCE</h2>
         <h4>{resumeObj.BSAList.name} | {resumeObj.BSAList.position} | {resumeObj.BSAList.location} </h4>
         <ul>
-          {resumeObj.BSAList.accs.map(item => (
-            <li>{item}</li>
+          {resumeObj.BSAList.accs.map((item, index) => (
+            <li key={index}>{item}</li>
           ))}
         </ul>
 
         <h2>MILITARY EXPERIENCE</h2>
         <h4>U.S. Army | Fort Hood, TX | Cavalry Scout Section Leader</h4>
         <ul>
-          {resumeObj.Military.list.map(item => (
-            <li>{item}</li>
+          {resumeObj.Military.list.map((item, index) => (
+            <li key={index}>{item}</li>
           ))}
         </ul>
       </div>
