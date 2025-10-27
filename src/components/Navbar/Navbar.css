@@ -7,12 +7,6 @@
     position: relative;
 }
 
-.logo{
-    height: 45px;
-    width: 45px;
-    margin-top: 30px;
-}
-
 .link-ctn{
     display: flex;
     align-items: center;
@@ -22,11 +16,10 @@
 }
 
 .link{
-    background: linear-gradient(goldenrod, var(--light-purple) 90%);
     background-clip: text;
-    color: transparent;
+    color: white;
     cursor: pointer;
-    font-size: .7rem;
+    font-size: .5rem;
     cursor: pointer;
     transition: .2s ease-in-out;
     text-decoration: none;

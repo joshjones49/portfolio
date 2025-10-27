@@ -1,14 +1,18 @@
-import HomeLeftCtn from '../../components/HomeLeftCtn/HomeLeftCtn'
-import HomeRightCtn from '../../components/HomeRightCtn/HomeRightCtn'
 import './Home.css'
 
 const Home = () => {
   return (
-    <div className='home' >
+    <div className='home pages' >
+
+      <div className='header' >
+        <h1>Hello!</h1>
+        <h2>I'm Josh Jones</h2>
+        <h2>Software Developer</h2>
+      </div>
+
       <div>
-        <HomeLeftCtn/>
-        <HomeRightCtn/>
-      </div>  
+        SKILLS
+      </div>
     </div>
   )
 }

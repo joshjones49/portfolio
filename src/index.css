@@ -55,6 +55,20 @@ html, body{
     }
 }
 
+@keyframes pulse {
+    0% {}
+
+    50% {
+        scale: 1.5;
+        border-radius: 5%;
+    }
+
+    100% {
+        border-radius: 50%;
+        transform: rotate(360deg);
+    }
+}
+
 .app{
     height: 100vh;
     display: flex;
@@ -64,8 +78,50 @@ html, body{
     background-color: black;
 }
 
-.text-grad{
+/* .text-grad{
     background: linear-gradient(goldenrod, var(--light-purple) 90%);
     background-clip: text;
     color: transparent;
+} */
+
+.decoration {
+    height: 5%;
+    width: 2.5%;
+    border-radius: 50%;
+    animation: pulse;
+    animation-duration: 120s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.decoration1 {
+    background: radial-gradient(circle at -5% 15%, orange, rgb(255, 115, 0) 40%);
+    position: fixed;
+    margin-left: 10px;
+    margin-top: 90px;
+}
+
+.decoration2 {
+    background: linear-gradient(purple, blue);
+    position: fixed;
+}
+
+.decoration3 {
+    background: radial-gradient(circle at -5% 15%, rgb(170, 101, 170), purple 40%);
+    position: fixed;
+    margin-left: -10px;
+    margin-top: -90px;
+}
+
+.routes-div{
+    display: flex;
+    height: 94.8%;
+    color: white;
+}
+
+@keyframes fastPulse {
+    100% {
+        scale: 1.1;
+    }
 }

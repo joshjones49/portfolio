@@ -1,0 +1,35 @@
+import './Navbar.css'
+
+import { Link, useLocation } from 'react-router-dom'
+
+
+const TopBar = () => {
+
+  const location = useLocation()
+
+  const pages = [
+    {path: '/', label: 'ABOUT'},
+    {path: '/projects', label: 'PROJECTS'},
+    {path: '/resume', label: 'RESUME'},
+    {path: '/contacts', label: 'CONTACTS'}
+  ]
+
+  const visibleNavItems = pages.filter(item => item.path !== location.pathname);
+
+  return (
+
+    <div className='top-bar' >
+
+    <div className="link-ctn">
+      {visibleNavItems.map(item => (
+        <Link className='link' to={item.path} >
+          <h1>{item.label}</h1>
+        </Link>
+      ))}
+    </div>
+
+    </div>
+  )
+}
+
+export default TopBar

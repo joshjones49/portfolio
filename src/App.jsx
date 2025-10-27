@@ -3,17 +3,27 @@ import { Route, Routes } from 'react-router-dom'
 // component imports
 import Projects from './pages/Projects/Projects'
 import Home from './pages/Home/Home'
-import TopBar from './components/TopBar/TopBar'
+import Navbar from './components/Navbar/Navbar'
+import Resume from './pages/Resume/Resume'
+import Info from './components/Info/Info'
 
 function App() {
 
   return (
     <div className='app' >
-      <TopBar/>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/projects' element={<Projects />} />
-      </Routes>
+      <Navbar/>
+      <div className='routes-div' >
+        <Info />
+
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/projects' element={<Projects />} />
+          <Route path='/resume' element={<Resume />} />
+        </Routes>
+      </div>
+      {/* <div className='decoration1 decoration' ></div>
+      <div className='decoration2 decoration' ></div>
+      <div className='decoration3 decoration' ></div> */}
     </div>
   )
 }
