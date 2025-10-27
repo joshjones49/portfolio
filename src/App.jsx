@@ -11,8 +11,11 @@ function App() {
 
   return (
     <div className='app' >
+
       <Navbar/>
+      
       <div className='routes-div' >
+
         <Info />
 
         <Routes>
@@ -20,10 +23,13 @@ function App() {
           <Route path='/projects' element={<Projects />} />
           <Route path='/resume' element={<Resume />} />
         </Routes>
+
       </div>
-      {/* <div className='decoration1 decoration' ></div>
-      <div className='decoration2 decoration' ></div>
-      <div className='decoration3 decoration' ></div> */}
+
+      <div className='decoration1 decoration' ></div>
+      {/* <div className='decoration2 decoration' ></div> */}
+      <div className='decoration3 decoration' ></div>
+
     </div>
   )
 }

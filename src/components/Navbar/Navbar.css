@@ -5,6 +5,8 @@
     justify-content: end;
     padding-left: 1em;
     position: relative;
+    background-color: transparent;
+    z-index: 10;
 }
 
 .link-ctn{
@@ -21,11 +23,11 @@
     cursor: pointer;
     font-size: .5rem;
     cursor: pointer;
-    transition: .2s ease-in-out;
+    transition: .1s ease-in-out;
     text-decoration: none;
 }
 
 .link:hover{
-    transform: scale(1.2);
-    color: white;
+    transform: scale(1.3);
+    color: lime;
 }

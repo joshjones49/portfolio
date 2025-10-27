@@ -5,9 +5,8 @@ const Home = () => {
     <div className='home pages' >
 
       <div className='header' >
-        <h1>Hello!</h1>
-        <h2>I'm Josh Jones</h2>
-        <h2>Software Developer</h2>
+        <h1>Josh Jones</h1>
+        <h1>Software Developer</h1>
       </div>
 
       <div>
