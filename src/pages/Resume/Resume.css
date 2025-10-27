@@ -1,0 +1,52 @@
+.resume{
+    height: 100%;
+    display: flex;
+}
+
+.download-btn{
+    width: 10%;
+    height: 5%;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    border-radius: 20px 7px 20px 7px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.download-btn>a{
+    text-decoration: none;
+    color: white;
+}
+.download-btn:hover{
+    animation: fastPulse;
+    animation-duration: .3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.resume-form{
+    height: 100%;
+    width: 80%;
+    backdrop-filter: blur(12px);
+    overflow-y: scroll;
+    font-size: .9rem;
+}
+.resume-form>h4{
+    font-style: italic;
+}
+
+.resume-form::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+    background: transparent;
+}
+
+.resume-form::-webkit-scrollbar-thumb{
+    background-color: transparent;
+    border-radius: 10px;
+    transition: .5s ease-in-out;
+}

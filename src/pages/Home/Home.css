@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     color: white;
 }
 
@@ -18,5 +18,36 @@
     align-items: left;
     justify-content: center;
     width: 75%;
-    margin-top: 2em;
+    /* border: 1px solid white; */
+}
+
+.header>h1{
+    margin-bottom: -15px;
+}
+
+.summary-ctn{
+    /* border: 1px solid white; */
+    width: 75%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.summary-ctn>h2{
+    font-size: 1.2rem;
+}
+
+.summary-ctn>h2>span{
+    font-style: italic;
+    color: lime;
+}
+
+.location{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.location>h3{
+    margin-left: 5px;
 }
