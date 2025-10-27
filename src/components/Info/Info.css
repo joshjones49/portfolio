@@ -16,7 +16,7 @@
 }
 
 .icons{
-    height: 15%;
+    height: 10%;
     width: 90%;
     margin-top: 2em;
     display: flex;
@@ -25,10 +25,9 @@
 }
 
 .social{
-    font-size: 5em;
+    font-size: 5rem;
     cursor: pointer;
     transition: .2s ease-in-out;
-    text-decoration: none;
     color: white;
 }
 .social:hover{
@@ -47,9 +46,4 @@
     justify-content: center;
     border: 1px solid white;
     height: 45%;
-}
-
-.gmail{
-    margin-bottom: 6.5%;
-    font-size: 5.4em;
 }

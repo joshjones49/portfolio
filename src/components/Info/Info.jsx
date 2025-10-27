@@ -2,9 +2,9 @@ import './Info.css'
 
 import { Link } from 'react-router-dom'
 
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { SiGmail } from "react-icons/si";
+import { GithubSquare } from '../SVGs/githubsvg';
+import { GmailLight } from '../SVGs/gmailsvg';
+import { Linkedin } from '../SVGs/linkedinsvg';
 
 const Info = () => {
   return (
@@ -13,16 +13,16 @@ const Info = () => {
 
         <div className="icons">
           <a href="https://github.com/joshjones49" target='_blank' className='social'>
-            <FaGithub />
+            <GithubSquare />
           </a>
           
-        <a href="https://www.linkedin.com/in/joshjones49/" target='_blank' className='social'>
-          <FaLinkedin />
-        </a>
+          <a href="https://www.linkedin.com/in/joshjones49/" target='_blank' className='social'>
+            <Linkedin />
+          </a>
 
-        <Link to='/contact'>
-          <SiGmail className='social gmail' />
-        </Link>
+          <Link to='/contact' className='social'>
+            <GmailLight />
+          </Link>
         </div>
 
         {/* <div className="decorations">
