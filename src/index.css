@@ -122,6 +122,7 @@ html, body{
     z-index: 10;
     /* border: 1px solid white; */
     width: 75%;
+    height: 100%;
 }
 
 .routes-div{
@@ -132,6 +133,18 @@ html, body{
     color: white;
     background-color: transparent;
     z-index: 10;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 10px;
+    transition: .5s ease-in-out;
 }
 
 @keyframes fastPulse {

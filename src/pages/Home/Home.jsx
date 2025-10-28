@@ -1,6 +1,6 @@
 import './Home.css'
 
-import { IoLocationSharp } from "react-icons/io5";
+import { LocationRipple24 } from '../../components/SVGs/location'
 
 const Home = () => {
 
@@ -12,7 +12,7 @@ const Home = () => {
         <h1>U.S. Army Veteran</h1>
         <h1>Full-Stack Software Developer</h1>
         <div className='location'>
-          <IoLocationSharp /> <h3>Marietta, GA</h3>
+          <LocationRipple24 /> <h3>Marietta, GA</h3>
         </div>
         
       </div>
