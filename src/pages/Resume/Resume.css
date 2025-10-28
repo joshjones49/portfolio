@@ -4,8 +4,8 @@
 }
 
 .download-btn{
-    width: 10%;
-    height: 5%;
+    width: 8%;
+    height: 3%;
     border: none;
     display: flex;
     flex-direction: row;
@@ -15,10 +15,15 @@
     border-radius: 20px 7px 20px 7px;
     margin-top: 20px;
     margin-left: 20px;
+    transition: .3s ease-in-out;
 }
 .download-btn>a{
     text-decoration: none;
     color: white;
+    transition: .3s ease-in-out;
+}
+.download-btn>a:hover{
+    color: black;
 }
 .download-btn:hover{
     animation: fastPulse;
@@ -26,6 +31,8 @@
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    color: black;
+    background-color: lime;
 }
 
 .resume-form{

@@ -6,6 +6,19 @@ import { GithubSquare } from '../SVGs/githubsvg';
 import { GmailLight } from '../SVGs/gmailsvg';
 import { Linkedin } from '../SVGs/linkedinsvg';
 
+import getTechIcon from '../../pages/Projects/getTechIcons';
+import { iconMap } from '../../pages/Projects/getTechIcons';
+
+import { FileTypeAngular } from '../../components/SVGs/angular'
+import { ReactIcon } from '../../components/SVGs/react'
+import { Postgresql } from '../../components/SVGs/postgresql'
+import { Java } from '../../components/SVGs/java'
+import { Springboot } from '../../components/SVGs/springboot'
+import { Nodejs } from '../../components/SVGs/node'
+import { Javascript } from '../../components/SVGs/javascript'
+import { Html5 } from '../../components/SVGs/html'
+import { Css3 } from '../../components/SVGs/css'
+
 const Info = () => {
   return (
     <div className='info'>
@@ -25,11 +38,22 @@ const Info = () => {
           </Link>
         </div>
 
-        {/* <div className="decorations">
-        </div> */}
+        <div className="skills">
+          <FileTypeAngular className='skill-item' />
+          <ReactIcon className='skill-item' />
+          <Postgresql className='skill-item' />
+          <Java className='skill-item' />
+          <Springboot className='skill-item spring-boot' />
+          <Nodejs className='skill-item' />
+          <Javascript className='skill-item' />
+          <Html5 className='skill-item' />
+          <Css3 className='skill-item' />
+        </div>
       
     </div>
   )
 }
 
 export default Info
+
+

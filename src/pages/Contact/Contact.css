@@ -30,6 +30,8 @@ form>textarea{
     color: white;
     max-width: 85%;
     max-height: 50%;
+    min-height: 20%;
+    min-width: 60%;
     border-bottom: 1px solid white;
     padding: 1rem;
     font-family: Poppins;

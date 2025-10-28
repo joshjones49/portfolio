@@ -31,7 +31,6 @@
     color: white;
 }
 .social:hover{
-    /* transform: scale(1.2); */
     animation: fastPulse;
     animation-duration: .3s;
     animation-timing-function: ease-in-out;
@@ -39,11 +38,27 @@
     animation-direction: alternate;
 }
 
-.decorations{
+.skills{
     width: 90%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    border: 1px solid white;
+    border: 1px solid gray;
+    border-radius: 10px;
     height: 45%;
+    padding: 10px;
+    overflow-y: auto;
+    background: radial-gradient(circle at 300px 700px, rgba(128, 128, 128, 0.9), rgba(0, 0, 0, 0.8));
+    backdrop-filter: blur(10px);
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin: 9px;
+    width: 6rem;
+    height: 6rem;
 }

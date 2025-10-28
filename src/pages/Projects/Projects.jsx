@@ -30,7 +30,7 @@ const Projects = () => {
               ))}
             </ul>
           )}
-        <h3>Technologies & Languages</h3>
+        <h3 className="tech-title">Technologies & Languages</h3>
         <div className="tech-icons">
           {item.technologies && item.technologies.map((tech, techIndex) => (
             <div key={techIndex} className="tech-item">
@@ -38,7 +38,9 @@ const Projects = () => {
             </div>
           ))}
         </div>
-        <button className='github' ><GithubSquare className='logo' /> Github</button>
+          <a href={item.githubLink} className='github' target='_blank'>
+            <GithubSquare className='logo' />
+          </a>
         </div>
         ))
         }
