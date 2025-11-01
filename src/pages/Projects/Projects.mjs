@@ -12,7 +12,7 @@ const PMD = {
         'JPQL used for queries to the PostgreSQL database allowing for a scalable RESTful API'
     ],
     technologies: ['Angular', 'Java', 'Spring Boot', 'PostgreSQL'],
-    githubLink: ''
+    githubLink: 'https://github.com/joshjones49/cook-systems-project-management-dashboard'
 }
 
 const SmartCard = {
@@ -32,8 +32,21 @@ const SmartCard = {
     githubLink: 'https://github.com/joshjones49/smart-card'
 }
 
+const HHH = {
+    name: "Hogwarts House Hunt",
+    description: 'Mini game that allows players to guess what house each charcter belongs to',
+    front: [
+        'Created using Angular',
+        'Allows players to pick their favorite House before starting the game, personal score is added to the total for the House',
+        'Leaderboard to display the high scores and the total scores of each House'
+    ],
+    back: [],
+    technologies: ['Angular'],
+    githubLink: 'https://github.com/joshjones49/Hogwarts-House-Hunt'
+}
+
 const projectsObj = [
-    PMD, SmartCard
+    SmartCard, PMD, HHH
 ]
 
 export default projectsObj

@@ -13,23 +13,31 @@ const Projects = () => {
         <div key={index} className="project-card">
           <h1>{item.name}</h1>
           <h3>{item.description}</h3>
-          <h3>Front-End</h3>
-          {item.front && (
-            <ul>
-              {item.front.map((elem, elemIndex) => (
-                <li key={elemIndex}>{elem}</li>
-              ))}
-            </ul>
+
+          {/* Front-End --------------------------------------------------- */}
+          {Array.isArray(item.front) && item.front.length > 0 && (
+            <>
+              <h3>Front-End</h3>
+              <ul>
+                {item.front.map((elem, elemIndex) => (
+                  <li key={elemIndex}>{elem}</li>
+                ))}
+              </ul>
+            </>
           )}
 
-          <h3>Back-End</h3>
-          {item.back && (
-            <ul>
-              {item.back.map((elem, elemIndex) => (
-                <li key={elemIndex}>{elem}</li>
-              ))}
-            </ul>
+          {/* Back-End ---------------------------------------------------- */}
+          {Array.isArray(item.back) && item.back.length > 0 && (
+            <>
+              <h3>Back-End</h3>
+              <ul>
+                {item.back.map((elem, elemIndex) => (
+                  <li key={elemIndex}>{elem}</li>
+                ))}
+              </ul>
+            </>
           )}
+
         <h3 className="tech-title">Technologies & Languages</h3>
         <div className="tech-icons">
           {item.technologies && item.technologies.map((tech, techIndex) => (

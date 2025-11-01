@@ -20,21 +20,11 @@ const Home = () => {
       <div className='summary-ctn'>
 
         <h2>
-          It is important to be a life-long learner and to make continous efforts to improve yourself. <br />
-          Full-stack developer with a more recent focus on back-end development using Java. <br />
-          I feel a strong connection with software development because it allows your creativity and logic to be put into action through a technological service that people can use to solve their problems or just have fun with.
+          I served 6 years in the U.S. Army as a Calvary Scout, 2 years as a team leader and 1 as a section leader. After my contract ended I started the Galvanize Coding Bootcamp, also known as the Hack Reactor Bootcamp. During that time I learned the PERN stack and how to develop front, back, and full-stack applications in teams of 2-5 developers and also solo development. After completing the course I would end up working at Bridgestone Americas as the Sr. Learning Education Analyst. Months later I joined the Cook Systems FastTrack Program where I learned Angular, Java, Spring-Boot, and PostgreSQL. Just like my previous bootcamp I created front, back, and full-stack applications in groups of 3 and gained a better understanding of how to work with others in a remote environment. Currently I am attending trade school in Jacksonville, FL but, I am really excited about and looking forward to opportunities as a software developer and contributing to a team and imporoving my development skills.
         </h2>
 
         <h2>
-          Outside of software development I enjoy quite a few activties and hobbies: <br />
-          <ul>
-            <li>Gaming</li>
-            <li>Gun range</li>
-            <li>Strength Training</li>
-            <li>Anime</li>
-            <li>Guitar</li>
-          </ul>
-          Besides software development I have experience as a data analyst and am currently <span>(as of Sept. 8, 2025)</span> attending trade school to become an HVAC technician.
+          Outside of development I really enjoy gaming, strength training, mid day walks to get those steps in, and binging some anime every now and then. If you are wondering my Top 5 All-Time would have to be Mobile Suit Gundam (1979), Dragon Ball, Berserk (1997 and the manga), Ruroni Kenshin, and YuYu Hakusho. Honorable mention to Attack On Titan!
         </h2>
 
       </div>

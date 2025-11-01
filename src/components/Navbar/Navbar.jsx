@@ -8,8 +8,8 @@ const Navbar = () => {
 
   const pages = [
     {path: '/', label: 'ABOUT'},
-    {path: '/projects', label: 'PROJECTS'},
     {path: '/resume', label: 'RESUME'},
+    {path: '/projects', label: 'PROJECTS'},
     {path: '/contact', label: 'CONTACT'}
   ]
 
@@ -19,13 +19,13 @@ const Navbar = () => {
 
     <div className='top-bar' >
 
-    <div className="link-ctn">
-      {visibleNavItems.map((item, index) => (
-        <Link key={index} className='link' to={item.path} >
-          <h1>{item.label}</h1>
-        </Link>
-      ))}
-    </div>
+      <div className="link-ctn">
+        {visibleNavItems.map((item, index) => (
+          <Link key={index} className='link' to={item.path} >
+            <h1>{item.label}</h1>
+          </Link>
+        ))}
+      </div>
 
     </div>
   )
