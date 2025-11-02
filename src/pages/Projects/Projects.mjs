@@ -36,7 +36,7 @@ const HHH = {
     name: "Hogwarts House Hunt",
     description: 'Mini game that allows players to guess what house each charcter belongs to',
     front: [
-        'Created using Angular',
+        'Created using Angular in a group of 3 developers',
         'Allows players to pick their favorite House before starting the game, personal score is added to the total for the House',
         'Leaderboard to display the high scores and the total scores of each House'
     ],

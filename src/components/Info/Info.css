@@ -62,3 +62,62 @@
     width: 6rem;
     height: 6rem;
 }
+
+@media (max-width: 768px) {
+.info {
+        height: 95%;
+        width: 20%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2em;
+        z-index: 10;
+    }
+
+    .photo {
+        height: 15%;
+        width: 90%;
+        border-radius: 5%;
+    }
+
+    .icons {
+        height: 10%;
+        width: 100%;
+        margin-top: .3em;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .social {
+        font-size: 1.3rem;
+        transition: .2s ease-in-out;
+        color: white;
+    }
+
+    .skills {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid gray;
+        border-radius: 10px;
+        height: 45%;
+        padding: 10px;
+        overflow-y: auto;
+        background: radial-gradient(circle at 300px 700px, rgba(128, 128, 128, 0.9), rgba(0, 0, 0, 0.8));
+        backdrop-filter: blur(10px);
+    }
+
+    .skill-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        margin: 9px;
+        width: 6rem;
+        height: 6rem;
+    }
+}

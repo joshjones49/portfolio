@@ -85,8 +85,8 @@ html, body{
 } */
 
 .decoration {
-    height: 1200px;
-    width: 1200px;
+    height: 1600px;
+    width: 1100px;
     border-radius: 10px;
     animation: pulse;
     animation-duration: 120s;
@@ -98,7 +98,7 @@ html, body{
 .decoration1 {
     background: radial-gradient(circle at -5% 15%, orange, rgb(255, 115, 0) 40%);
     position: fixed;
-    margin-left: -1110px;
+    margin-left: -410px;
     margin-top: 290px;
 }
 
@@ -110,7 +110,7 @@ html, body{
 .decoration3 {
     background: radial-gradient(circle at -5% 15%, rgb(170, 101, 170), purple 40%);
     position: fixed;
-    margin-left: 1810px;
+    margin-left: 1710px;
     margin-top: -290px;
 }
 
@@ -150,5 +150,24 @@ html, body{
 @keyframes fastPulse {
     100% {
         scale: 1.1;
+    }
+}
+
+h1, h2, h3, h4, li {
+    text-shadow: 1px 1px 1px black;
+}
+
+@media (hover: hover) {
+    .link:hover {
+        transform: scale(1.3);
+        color: lime;
+    }
+}
+
+/* Touch device specific styles */
+@media (hover: none) {
+    .link:active {
+        color: lime;
+        transform: scale(0.95);
     }
 }
