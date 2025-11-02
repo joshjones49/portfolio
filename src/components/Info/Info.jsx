@@ -1,13 +1,13 @@
 import './Info.css'
 
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 import { GithubSquare } from '../SVGs/githubsvg';
 import { GmailLight } from '../SVGs/gmailsvg';
 import { Linkedin } from '../SVGs/linkedinsvg';
 
-import getTechIcon from '../../pages/Projects/getTechIcons';
-import { iconMap } from '../../pages/Projects/getTechIcons';
+import resumePDF from '../../assets/SD_Joshua_Jones3.pdf'
+import { IoMdDownload } from 'react-icons/io';
 
 import { FileTypeAngular } from '../../components/SVGs/angular'
 import { ReactIcon } from '../../components/SVGs/react'
@@ -20,6 +20,16 @@ import { Html5 } from '../../components/SVGs/html'
 import { Css3 } from '../../components/SVGs/css'
 
 const Info = () => {
+
+  const location = useLocation()
+
+  const pages = [
+    { path: '/', label: 'ABOUT' },
+    { path: '/resume', label: 'RESUME' },
+    { path: '/projects', label: 'PROJECTS' },
+    { path: '/contact', label: 'CONTACT' }
+  ]
+
   return (
     <div className='info'>
       <img src="https://avatars.githubusercontent.com/u/143196112?s=400&u=327e8df978240c5aa3419d86cd61e4d70dc6f769&v=4" alt='IMG'  className="photo" />
@@ -49,6 +59,15 @@ const Info = () => {
           <Html5 className='skill-item' />
           <Css3 className='skill-item' />
         </div>
+
+        {location.pathname === '/resume' && (
+          <div className="download-btn">
+            <IoMdDownload />
+            <a href={resumePDF} download="Joshua_Jones.pdf">
+              Download
+            </a>
+          </div>
+        )}
       
     </div>
   )

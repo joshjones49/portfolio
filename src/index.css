@@ -120,9 +120,9 @@ html, body{
     animation-timing-function: ease-in-out;
     background-color: transparent;
     z-index: 10;
-    /* border: 1px solid white; */
     width: 75%;
     height: 100%;
+    overflow: auto;
 }
 
 .routes-div{

@@ -13,8 +13,7 @@
     display: flex;
     align-items: left;
     flex-direction: column;
-    /* max-height: fit-content;
-    min-height: 70%; */
+    min-height: 70%;
     height: 80%;
     width: 40%;
     font-size: .9rem;
@@ -91,4 +90,57 @@
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
+}
+
+@media (max-width: 450px) {
+
+    .project-card {
+        display: flex;
+        align-items: left;
+        flex-direction: column;
+        height: fit-content;
+        width: 100%;
+        font-size: .4rem;
+        padding: .4rem;
+        line-height: 1.4;
+    }
+
+    .github {
+        font-family: Poppins;
+        width: fit-content;
+        height: fit-content;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        margin-left: 5px;
+    }
+    .logo {
+        margin-right: 0;
+    }
+
+    .tech-icons {
+        gap: .6rem;
+        height: fit-content;
+    }
+
+    .tech-icons svg {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .expressjs {
+        font-size: 1rem;
+        color: green;
+        text-shadow: -1px -1px 0px black;
+    }
+
+    .project-card>a>button {
+        font-family: Poppins;
+        background: transparent;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
 }

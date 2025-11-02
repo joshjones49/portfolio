@@ -57,3 +57,19 @@
     border-radius: 10px;
     transition: .5s ease-in-out;
 }
+
+@media (max-width: 450px) {
+    .download-btn {
+        display: none;
+    }
+
+    .resume-form {
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(12px);
+        overflow-y: scroll;
+        font-size: .7rem;
+        margin-left: 5px;
+        line-height: 1.1;
+    }
+}

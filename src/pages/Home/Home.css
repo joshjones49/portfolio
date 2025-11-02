@@ -83,15 +83,15 @@
     }
 
     .summary-ctn {
-        width: 75%;
-        height: 50%;
+        width: 90%;
+        height: 80%;
         display: flex;
         flex-direction: column;
         justify-content: left;
     }
 
     .summary-ctn>h2 {
-        font-size: .4rem;
+        font-size: .8rem;
     }
 
     .summary-ctn>h2>span {

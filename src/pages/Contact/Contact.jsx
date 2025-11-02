@@ -23,19 +23,19 @@ const Contact = () => {
 
   return  (
     <div className='contact pages' >
-          <div className='contact-header' >
-              <h1>Email Me!</h1>
-              <h2>Always ready to discuss possible opportunities!</h2>
-              <h4>joshjones200285@gmail.com</h4>
-          </div>
+        <div className='contact-header' >
+            <h1>Email Me!</h1>
+            <h2>Always ready to discuss possible opportunities!</h2>
+            <h4>joshjones200285@gmail.com</h4>
+        </div>
 
-          <form onSubmit={onSubmit}>
-              <input type="text" name="name" required placeholder='Name' />
-              <input type="email" name="email" required placeholder='Email' />
-              <textarea name="message" required placeholder='Message...'></textarea>
-              <button type="submit">Submit</button>
-              <p>{result}</p>
-          </form>
+        <form onSubmit={onSubmit}>
+            <input type="text" name="name" required placeholder='Name' />
+            <input type="email" name="email" required placeholder='Email' />
+            <textarea name="message" required placeholder='Message...'></textarea>
+            <button type="submit">Submit</button>
+            <p>{result}</p>
+        </form>
     </div>
   )
 }

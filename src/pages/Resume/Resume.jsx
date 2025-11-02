@@ -47,7 +47,7 @@ const Resume = () => {
       <div className="download-btn">
         <IoMdDownload />
         <a href={resumePDF} download="Joshua_Jones.pdf">
-           Download
+          Download
         </a>
       </div>
     </div>

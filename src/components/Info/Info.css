@@ -51,19 +51,20 @@
     overflow-y: auto;
     background: radial-gradient(circle at 300px 700px, rgba(128, 128, 128, 0.9), rgba(0, 0, 0, 0.8));
     backdrop-filter: blur(10px);
+    overflow: auto;
 }
 
 .skill-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
     margin: 9px;
     width: 6rem;
     height: 6rem;
 }
 
-@media (max-width: 768px) {
+.info > .download-btn {
+    display: none;
+}
+
+@media (max-width: 450px) {
 .info {
         height: 95%;
         width: 20%;
@@ -71,7 +72,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 2em;
+        padding-top: em;
         z-index: 10;
     }
 
@@ -87,37 +88,36 @@
         margin-top: .3em;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .social {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         transition: .2s ease-in-out;
         color: white;
     }
 
     .skills {
-        width: 90%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid gray;
-        border-radius: 10px;
-        height: 45%;
-        padding: 10px;
-        overflow-y: auto;
-        background: radial-gradient(circle at 300px 700px, rgba(128, 128, 128, 0.9), rgba(0, 0, 0, 0.8));
-        backdrop-filter: blur(10px);
+        width: 80%;
+        height: 60%;
+        padding: .1rem;
+        flex-direction: column;
+        overflow: auto;
     }
 
-    .skill-item {
+    .skill-item{
+        height: 1rem;
+        width: 2rem;
+    }
+
+    .info > .download-btn {
         display: flex;
-        flex-direction: column;
+        width: 100%;
+        font-size: .5rem;
         align-items: center;
-        gap: 5px;
-        margin: 9px;
-        width: 6rem;
-        height: 6rem;
+        margin-left: 2px;
+        animation: fadeIn;
+        animation-duration: .2s;
+        animation-timing-function: ease-in-out;
     }
 }
