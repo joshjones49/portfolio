@@ -68,8 +68,12 @@
         width: 100%;
         backdrop-filter: blur(12px);
         overflow-y: scroll;
-        font-size: .7rem;
+        font-size: .9rem;
         margin-left: 5px;
-        line-height: 1.1;
+        line-height: 1.2;
+    }
+
+    .resume{
+        width: 99%;
     }
 }

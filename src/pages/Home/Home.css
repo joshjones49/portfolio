@@ -39,11 +39,6 @@
     font-size: 1.2rem;
 }
 
-.summary-ctn>h2>span{
-    font-style: italic;
-    color: lime;
-}
-
 .location{
     display: flex;
     align-items: center;
@@ -56,6 +51,7 @@
 @media (max-width: 768px) {
     .home {
         height: 100%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -64,16 +60,12 @@
         overflow: auto;
     }
     
-    .home-ctn {
-        display: flex;
-    }
-    
     .header {
         display: flex;
         flex-direction: column;
         align-items: left;
         justify-content: center;
-        width: 75%;
+        width: 90%;
         text-wrap: balance;
     }
     
@@ -92,11 +84,6 @@
 
     .summary-ctn>h2 {
         font-size: .8rem;
-    }
-
-    .summary-ctn>h2>span {
-        font-style: italic;
-        color: lime;
     }
 
     .location {
