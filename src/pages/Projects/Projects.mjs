@@ -45,8 +45,17 @@ const HHH = {
     githubLink: 'https://github.com/joshjones49/Hogwarts-House-Hunt'
 }
 
+const GoServer = {
+    name: "Go HTTP Server",
+    description: "Simple HTTP server created using Go, connected to jsonplaceholder for fetching data",
+    front: [],
+    back: ["Full CRUD functionality"],
+    technologies: ['Go'],
+    githubLink: "https://github.com/joshjones49/go-http-server"
+}
+
 const projectsObj = [
-    SmartCard, PMD, HHH
+    SmartCard, PMD, HHH, GoServer
 ]
 
 export default projectsObj

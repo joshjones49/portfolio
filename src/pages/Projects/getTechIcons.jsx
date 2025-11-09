@@ -7,6 +7,7 @@ import { Nodejs } from '../../components/SVGs/node'
 import { Javascript } from '../../components/SVGs/javascript'
 import { Html5 } from '../../components/SVGs/html'
 import { Css3 } from '../../components/SVGs/css'
+import { Golang } from '../../components/SVGs/go'
 
 export const iconMap = {
   'Angular': <FileTypeAngular />,
@@ -18,7 +19,8 @@ export const iconMap = {
   'Express': <span className='expressjs'>ex</span>,
   'Node.js': <Nodejs />,
   'HTML': <Html5 />,
-  'CSS': <Css3 />
+  'CSS': <Css3 />,
+  'Go': <Golang />
 };
 
 const getTechIcon = (techName) => {

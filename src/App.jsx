@@ -28,9 +28,9 @@ function App() {
 
       </div>
 
-      <div className='decoration1 decoration' ></div>
+      {/* <div className='decoration1 decoration' ></div> */}
       {/* <div className='decoration2 decoration' ></div> */}
-      <div className='decoration3 decoration' ></div>
+      {/* <div className='decoration3 decoration' ></div> */}
 
     </div>
   )

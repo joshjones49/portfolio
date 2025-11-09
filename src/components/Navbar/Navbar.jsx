@@ -10,7 +10,7 @@ const Navbar = () => {
     {path: '/', label: 'ABOUT'},
     {path: '/resume', label: 'RESUME'},
     {path: '/projects', label: 'PROJECTS'},
-    {path: '/contact', label: 'CONTACT'}
+    // {path: '/contact', label: 'CONTACT'}
   ]
 
   const visibleNavItems = pages.filter(item => item.path !== location.pathname);

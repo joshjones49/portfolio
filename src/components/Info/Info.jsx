@@ -56,7 +56,7 @@ const Info = () => {
         
 
         {/* {location.pathname === '/projects' && ( */}
-          <div className="skills">
+          {/* <div className="skills">
             <FileTypeAngular className='skill-item' />
             <ReactIcon className='skill-item' />
             <Postgresql className='skill-item' />
@@ -66,7 +66,7 @@ const Info = () => {
             <Javascript className='skill-item' />
             <Html5 className='skill-item' />
             <Css3 className='skill-item' />
-          </div>
+          </div> */}
         {/* )} */}
         
 
