@@ -88,15 +88,18 @@ html, body{
     height: 1600px;
     width: 1100px;
     border-radius: 10px;
-    animation: pulse;
+    background-image: url("./assets/wallpaper.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* animation: pulse;
     animation-duration: 120s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation-direction: alternate; */
 }
 
 .decoration1 {
-    background: radial-gradient(circle at -5% 15%, orange, rgb(255, 115, 0) 40%);
     position: fixed;
     margin-left: -410px;
     margin-top: 290px;
