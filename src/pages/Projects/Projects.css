@@ -17,7 +17,7 @@
     height: 80%;
     width: 40%;
     font-size: .9rem;
-    background: radial-gradient(circle at 200px 1200px,gray, transparent);
+    background: radial-gradient(circle at 300px 700px, rgba(128, 128, 128, 0.9), rgba(0, 0, 0, 0.8));
     border-radius: 10px;
     margin-top: 50px;
     border: 1px solid gray;

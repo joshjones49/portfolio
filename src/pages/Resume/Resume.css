@@ -40,10 +40,12 @@
     height: 100%;
     width: 80%;
     backdrop-filter: blur(12px);
+    background: radial-gradient(circle at 300px 700px, rgba(128, 128, 128, 0.9), rgba(0, 0, 0, 0.8));
     overflow-y: scroll;
     font-size: 1.3rem;
     padding: 1.2rem;
     line-height: 1.2;
+    border-radius: 10px;
 }
 .resume-form>h4{
     font-style: italic;
