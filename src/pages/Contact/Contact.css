@@ -7,7 +7,7 @@ form{
     align-items: center;
     backdrop-filter: blur(5px);
     border-radius: 10px;
-    background: radial-gradient(circle at 250px -200px, gray, transparent);
+    background: radial-gradient(circle at 300px 700px, rgba(128, 128, 128, 0.9), rgba(0, 0, 0, 0.8));
     border: 1px solid gray;
 }
 form>input{
