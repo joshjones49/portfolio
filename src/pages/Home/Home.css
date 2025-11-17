@@ -67,6 +67,10 @@
     
 }
 
+.tech-item {
+    border: 1px solid white;
+}
+
 /* MEDIA QUERY ========================================= */
 @media (max-width: 768px) {
     .home {

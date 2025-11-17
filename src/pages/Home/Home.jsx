@@ -26,12 +26,21 @@ const Home = () => {
         <div className="skills home-ctns">
           <h1>Technologies & Languages</h1>
           <div className='tech' >
-            
+            {Object.entries(iconMap).map(([techName, icon], index) => (
+              <div key={index} className="tech-item">
+                <div>
+                  {icon}
+                  {techName}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
 
         <div className="hobbies home-ctns">
           <h1>Hobbies</h1>
+          <div className="hobbies-list">
+          </div>
         </div>
 
       </div>
