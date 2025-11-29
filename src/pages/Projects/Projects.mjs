@@ -54,8 +54,17 @@ const GoServer = {
     githubLink: "https://github.com/joshjones49/go-http-server"
 }
 
+const CPP = {
+    name: "C++ Console Projects",
+    description: "Repo of console projects I am creating to learn C++",
+    front: [],
+    back: [],
+    technologies: ['C++'],
+    githubLink: "https://github.com/joshjones49/Cpp-console-projects"
+}
+
 const projectsObj = [
-    SmartCard, PMD, HHH, GoServer
+    SmartCard, PMD, CPP, HHH, GoServer
 ]
 
 export default projectsObj
