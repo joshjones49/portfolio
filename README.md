@@ -1,4 +1,4 @@
-# My Software Developer Porfolio
+# My Software Developer Portfolio
 
 ### Created using React and libraries such as React-Router-Dom and React-Icons
 
