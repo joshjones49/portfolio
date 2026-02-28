@@ -1,7 +1,7 @@
 import './Resume.css'
 
 import { IoMdDownload } from "react-icons/io";
-import resumePDF from '../../assets/SD_Joshua_Jones3.pdf';
+import resumePDF from '../../assets/SD_Joshua_Jones_4.pdf';
 import resumeObj from './resume.mjs'
 
 const Resume = () => {
@@ -9,36 +9,49 @@ const Resume = () => {
     <div className='resume pages' >
 
       <div className='resume-form'>
-        <h2>EDUCATION</h2>
-        <h4>{resumeObj.Education[0]}</h4>
-        <h4>{resumeObj.Education[1]}</h4>
-        <h2>PROJECTS</h2>
-        <h4>SmartCard | Full-Stack</h4>
-        <ul>
-          {resumeObj.SmartCardList.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
-
-        <h4>Project Management Dashboard | Full-Stack</h4>
-        <ul>
-          {resumeObj.PMDList.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
+        
+        <h2>SOFTWARE DEVELOPER PROJECTS</h2>
+        {resumeObj.projectList.map((project, index) => (
+          <div key={index}>
+            <h4>{project.title} | {project.stack} | {project.date}</h4>
+            <ul>
+              {project.bullets.map((item, bulletIndex) => (
+                <li key={bulletIndex}>{item}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
 
         <h2>PROFESSIONAL EXPERIENCE</h2>
-        <h4>{resumeObj.BSAList.name} | {resumeObj.BSAList.position} | {resumeObj.BSAList.location} </h4>
-        <ul>
-          {resumeObj.BSAList.accs.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
+        {resumeObj.professionalExperience.map((job, index) => (
+          <div key={index}>
+            <h4>
+              {job.company} | {job.role}
+              {job.location ? ` | ${job.location}` : ''} | {job.date}
+            </h4>
+            <ul>
+              {job.bullets.map((item, bulletIndex) => (
+                <li key={bulletIndex}>{item}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
 
         <h2>MILITARY EXPERIENCE</h2>
-        <h4>U.S. Army | Fort Hood, TX | Cavalry Scout Section Leader</h4>
+        <div>
+          <h4>
+            {resumeObj.militaryExperience.company} | {resumeObj.militaryExperience.role} | {resumeObj.militaryExperience.location} | {resumeObj.militaryExperience.date}
+          </h4>
+          <ul>
+            {resumeObj.militaryExperience.bullets.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        </div>
+
+        <h2>EDUCATION & CERTIFICATES</h2>
         <ul>
-          {resumeObj.Military.list.map((item, index) => (
+          {resumeObj.educationAndCertificates.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
         </ul>

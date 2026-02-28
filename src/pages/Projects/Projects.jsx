@@ -41,7 +41,7 @@ const Projects = () => {
         <h3 className="tech-title">Technologies & Languages</h3>
         <div className="tech-icons">
           {item.technologies && item.technologies.map((tech, techIndex) => (
-            <div key={techIndex} className="tech-item">
+            <div key={techIndex} className="project-tech-item">
               {getTechIcon(tech)}
             </div>
           ))}

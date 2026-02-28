@@ -26,20 +26,20 @@ const Home = () => {
         <div className="skills home-ctns">
           <h1>Technologies & Languages</h1>
           <div className='tech' >
-            {Object.entries(iconMap).map(([techName, icon], index) => (
+            {Object.values(iconMap).map((icon, index) => (
               <div key={index} className="tech-item">
-                <div>
-                  {icon}
-                  {techName}
-                </div>
+                <div>{icon}</div>
               </div>
             ))}
           </div>
         </div>
 
         <div className="hobbies home-ctns">
-          <h1>Hobbies</h1>
+          <h1>About</h1>
           <div className="hobbies-list">
+            <p className='about-bio'>
+              I am a U.S. Army veteran and full-stack software developer with experience spanning a technical intelligence internship at Lockheed Martin, data analytics work at Bridgestone, and hands-on development in Java/Spring Boot, Angular, React, PostgreSQL, and C++.
+            </p>
           </div>
         </div>
 

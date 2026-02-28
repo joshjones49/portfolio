@@ -60,21 +60,80 @@
 }
 
 .tech{
-    border: 1px solid white;
     height: 80%;
     width: 95%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    grid-auto-rows: 1fr;
+    align-items: stretch;
+    justify-items: stretch;
+    gap: 12px;
     overflow: auto;
 }
 
 .tech-item {
-    border: 1px solid white;
-    height: 50%;
-    font-size: 2rem;
+    border: none;
+    min-height: 0;
+    min-width: 0;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    --icon-size: clamp(4.8rem, 9.5vw, 7.5rem);
+}
+
+.tech-item > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.tech-item svg {
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+.tech-item .expressjs {
+    width: var(--icon-size);
+    height: var(--icon-size);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--icon-size);
+    line-height: 1;
+    color: green;
+}
+
+.tech-item .cpp-icon {
+    width: var(--icon-size);
+    height: var(--icon-size);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(var(--icon-size) * 0.62);
+    line-height: 1;
+    color: #ff5a5a;
+    -webkit-text-stroke: 1px #ffffff;
+    text-shadow: 0 0 1px #ffffff;
+    font-weight: 700;
+    transform: translateX(40px);
+}
+
+.hobbies-list {
+    width: 90%;
+    height: 80%;
+    overflow-y: auto;
+}
+
+.hobbies-list > p {
+    font-size: 2rem;
+}
+
+.about-bio {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.5;
 }
 
 /* MEDIA QUERY ========================================= */
@@ -130,5 +189,10 @@
 
     .ripple{
         font-size: .7rem;
+    }
+
+    .about-bio {
+        font-size: .9rem;
+        line-height: 1.4;
     }
 }

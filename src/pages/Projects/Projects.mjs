@@ -26,7 +26,7 @@ const SmartCard = {
     back: [
         'RESTful API with full CRUD functionality',
         'Integrated with PostgreSQL database to manage data',
-        'Use of JWT and Bcrypt to allow for authentication and authroization'
+        'Use of JWT and Bcrypt to allow for authentication and authorization'
     ],
     technologies: ['React', 'Express', 'Node.js', 'PostgreSQL'],
     githubLink: 'https://github.com/joshjones49/smart-card'
@@ -34,7 +34,7 @@ const SmartCard = {
 
 const HHH = {
     name: "Hogwarts House Hunt",
-    description: 'Mini game that allows players to guess what house each charcter belongs to',
+    description: 'Mini game that allows players to guess what house each character belongs to',
     front: [
         'Created using Angular in a group of 3 developers',
         'Allows players to pick their favorite House before starting the game, personal score is added to the total for the House',
@@ -55,16 +55,20 @@ const GoServer = {
 }
 
 const CPP = {
-    name: "C++ Console Projects",
-    description: "Repo of console projects I am creating to learn C++",
+    name: "Telemetry-Processor",
+    description: "Object-oriented telemetry processing simulation that models aerospace sensor data (altitude and velocity)",
     front: [],
-    back: [],
+    back: [
+        "Built with polymorphism, inheritance, and factory patterns to keep sensor processing extensible.",
+        "Implemented thread-safe logging and RAII-based memory management for reliable concurrent execution.",
+        "Configured CMake builds and Google Test coverage for simulation accuracy, threshold monitoring, and fault detection."
+    ],
     technologies: ['C++'],
-    githubLink: "https://github.com/joshjones49/Cpp-console-projects"
+    githubLink: "https://github.com/joshjones49/Telemetry-Processor"
 }
 
 const projectsObj = [
-    SmartCard, PMD, CPP, HHH, GoServer
+    SmartCard, PMD, CPP, HHH
 ]
 
 export default projectsObj
