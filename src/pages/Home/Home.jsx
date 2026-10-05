@@ -38,7 +38,7 @@ const Home = () => {
           <h1>About</h1>
           <div className="hobbies-list">
             <p className='about-bio'>
-              I am a U.S. Army veteran and full-stack software developer with experience spanning a technical intelligence internship at Lockheed Martin, data analytics work at Bridgestone, and hands-on development in Java/Spring Boot, Angular, React, PostgreSQL, and C++.
+              Software developer with a mix of full-stack web development, systems programming, and real-world technical problem-solving. Comfortable working in C++, Java/Spring Boot, Angular, and PostgreSQL, and enjoys building things that are solid and maintainable.
             </p>
           </div>
         </div>

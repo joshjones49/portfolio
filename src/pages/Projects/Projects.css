@@ -114,7 +114,6 @@
     -webkit-text-stroke: 1px #ffffff;
     text-shadow: 0 0 1px #ffffff;
     font-weight: 700;
-    transform: translateX(9px);
 }
 
 @media (max-width: 1100px) {

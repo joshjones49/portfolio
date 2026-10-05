@@ -4,7 +4,7 @@ const resumeObj = {
         phone: '317-493-6150',
         email: 'joshjones200285@gmail.com',
         linkedinLabel: 'LinkedIn: joshjones49',
-        location: 'Marietta, GA',
+        location: 'Hawley, TX',
         portfolioLabel: 'Software Developer Projects',
         portfolioLink: 'https://github.com/joshjones49'
     },
@@ -35,6 +35,7 @@ const resumeObj = {
             company: 'Oracle',
             role: 'Datacenter Technician',
             date: 'June 2026 - Present',
+            location: 'Abilene, TX',
             bullets: [
                 'Diagnosed and repaired NIC/MPO and Ethernet link faults by cleaning/reseating connections, swapping optics, validating light levels, and correcting cable mislabels.',
                 'Performed link-flap and BER troubleshooting between leaf/spine and GPU devices, then verified stability through LVV, Grafana, and CPV validation.',
@@ -43,7 +44,7 @@ const resumeObj = {
         },
         {
             company: 'Lockheed Martin',
-            role: 'Technical Intelligence Analyst (Internship)',
+            role: 'Technical Intelligence Analyst (Remote Internship)',
             location: '',
             date: 'Jan 2026 - April 2026',
             bullets: [
