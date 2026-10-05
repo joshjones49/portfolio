@@ -1,74 +1,88 @@
-.projects{
-    color: white;
-    overflow-y: auto;
-    font-family: Poppins;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: start;
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.9rem;
+    align-content: start;
 }
 
-.project-card{
+.project-card {
+    min-height: 0;
     display: flex;
-    align-items: left;
     flex-direction: column;
-    min-height: 70%;
-    height: 80%;
-    width: 40%;
-    font-size: .9rem;
-    background: radial-gradient(circle at 300px 700px, rgba(128, 128, 128, 0.9), rgba(0, 0, 0, 0.8));
-    border-radius: 10px;
-    margin-top: 50px;
-    border: 1px solid gray;
-    backdrop-filter: blur(5px);
-    margin-left: 2rem;
-    padding: 1.25rem;
-    justify-content: space-between;
+    gap: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--surface-strong);
+    box-shadow: var(--shadow);
+    padding: 1rem;
 }
 
-.github{
-    font-family: Poppins;
-    width: 20%;
-    height: 6%;
-    background-color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
+.project-card h1 {
+    font-size: 1.03rem;
+}
+
+.project-card h3 {
+    font-size: 0.87rem;
+    color: var(--text-subtle);
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 700;
+}
+
+.project-card ul {
+    margin: 0;
+    padding-left: 1.1rem;
+    color: var(--text-subtle);
+}
+
+.project-card li {
+    margin-bottom: 0.34rem;
+    line-height: 1.45;
+}
+
+.github {
+    margin-top: auto;
+    align-self: flex-start;
+    min-width: 56px;
+    min-height: 46px;
+    padding: 0.25rem 0.7rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: #ffffff;
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
-    transition: .3s ease-in-out;
-    text-decoration: none;
-    color: black;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
-.github:hover{
-    background-color: lime;
+
+.github:hover {
+    background: var(--accent-soft);
+    color: var(--accent-strong);
 }
-.logo{
-    margin-right: 10px;
+
+.logo {
+    margin-right: 0;
 }
 
 .tech-icons {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 0.52rem;
     flex-wrap: wrap;
-    height: auto;
-    min-height: 0;
-    max-height: none;
-    --project-icon-size: clamp(1.6rem, 2vw, 2.2rem);
+    --project-icon-size: clamp(1.45rem, 1.8vw, 1.85rem);
 }
 
 .project-tech-item {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: var(--project-icon-size);
-    height: var(--project-icon-size);
-    min-width: var(--project-icon-size);
-    min-height: var(--project-icon-size);
+    width: calc(var(--project-icon-size) + 10px);
+    height: calc(var(--project-icon-size) + 10px);
+    border: 1px solid rgba(15, 52, 102, 0.1);
+    border-radius: 8px;
+    background: #f8fbff;
 }
 
 .project-tech-item svg {
@@ -85,88 +99,41 @@
     font-size: var(--project-icon-size);
 }
 
-.spring-boot{
-    color: green;
+.spring-boot {
+    color: #1f9d56;
 }
 
-.project-tech-item .expressjs{
+.project-tech-item .expressjs {
     font-size: var(--project-icon-size);
-    color: green;
-    text-shadow: -1px -1px 0px black;
+    color: #1f9d56;
 }
 
 .project-tech-item .cpp-icon {
     font-size: calc(var(--project-icon-size) * 0.62);
-    color: #ff5a5a;
+    color: #f44949;
     -webkit-text-stroke: 1px #ffffff;
     text-shadow: 0 0 1px #ffffff;
     font-weight: 700;
-    transform: translateX(30px);
+    transform: translateX(9px);
 }
 
-.project-card>a>button{
-    font-family: Poppins;
-    background: transparent;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
-@media (max-width: 450px) {
-
-    .projects{
-        width: 100%;
-        margin-left: -1.2rem;
+@media (max-width: 1100px) {
+    .projects {
+        grid-template-columns: 1fr;
     }
+}
 
+@media (max-width: 900px) {
     .project-card {
-        display: flex;
-        align-items: left;
-        flex-direction: column;
-        min-height: fit-content;
-        width: 100%;
-        font-size: .7rem;
-        padding: .4rem;
-        line-height: 1.4;
-        margin-top: .5rem;
+        padding: 0.85rem;
     }
 
-    .github {
-        font-family: Poppins;
-        width: fit-content;
-        height: fit-content;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 2rem;
-        margin-left: 5px;
-    }
-    .logo {
-        margin-right: 0;
-    }
-
-    .tech-icons {
-        gap: .6rem;
-        height: fit-content;
-    }
-
-    .project-tech-item svg {
-        width: 2rem;
-        height: 2rem;
-    }
-
-    .project-tech-item .expressjs {
+    .project-card h1 {
         font-size: 1rem;
-        color: green;
-        text-shadow: -1px -1px 0px black;
     }
 
-    .project-card>a>button {
-        font-family: Poppins;
-        background: transparent;
-        border: none;
-        font-size: 1.5rem;
-        cursor: pointer;
+    .project-card h3,
+    .project-card li {
+        font-size: 0.84rem;
     }
 }

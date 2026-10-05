@@ -1,88 +1,82 @@
-.resume{
+.resume {
     height: 100%;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 1rem;
+    min-height: 0;
 }
 
-.download-btn{
-    width: 8%;
-    height: 3%;
-    border: none;
-    display: flex;
-    flex-direction: row;
+.resume-form {
+    min-height: 0;
+    overflow-y: auto;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: var(--surface-strong);
+    padding: clamp(0.95rem, 2vw, 1.3rem);
+    line-height: 1.5;
+    color: var(--text-main);
+}
+
+.resume-form h2 {
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    margin-bottom: 0.85rem;
+    color: #3d4b5b;
+}
+
+.resume-form h4 {
+    font-size: 0.9rem;
+    margin: 0.9rem 0 0.45rem;
+    color: var(--text-main);
+    font-weight: 700;
+}
+
+.resume-form ul {
+    margin: 0;
+    padding-left: 1.1rem;
+}
+
+.resume-form li {
+    color: var(--text-subtle);
+    margin-bottom: 0.36rem;
+}
+
+.download-btn {
+    align-self: flex-start;
+    position: sticky;
+    top: 0;
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
-    background-color: #333;
-    border-radius: 20px 7px 20px 7px;
-    margin-top: 20px;
-    margin-left: 20px;
-    transition: .3s ease-in-out;
+    gap: 0.45rem;
+    padding: 0.7rem 0.9rem;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: #ffffff;
+    color: var(--accent);
+    box-shadow: var(--shadow);
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
-.download-btn>a{
+
+.download-btn a {
     text-decoration: none;
-    color: white;
-    transition: .3s ease-in-out;
-}
-.download-btn>a:hover{
-    color: black;
-}
-.download-btn:hover{
-    animation: fastPulse;
-    animation-duration: .3s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    color: black;
-    background-color: lime;
+    color: inherit;
+    font-weight: 700;
+    font-size: 0.9rem;
 }
 
-.resume-form{
-    height: 100%;
-    width: 80%;
-    backdrop-filter: blur(12px);
-    background: radial-gradient(circle at 300px 700px, rgba(128, 128, 128, 0.9), rgba(0, 0, 0, 0.8));
-    overflow-y: scroll;
-    font-size: 1.3rem;
-    padding: 1.2rem;
-    line-height: 1.2;
-    border-radius: 10px;
-}
-.resume-form>h4{
-    font-style: italic;
+.download-btn:hover {
+    background: var(--accent-soft);
+    color: var(--accent-strong);
 }
 
-.resume-form a{
-    color: white;
-}
+@media (max-width: 900px) {
+    .resume {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
 
-.resume-form::-webkit-scrollbar{
-    width: 10px;
-    height: 10px;
-    background: transparent;
-}
-
-.resume-form::-webkit-scrollbar-thumb{
-    background-color: transparent;
-    border-radius: 10px;
-    transition: .5s ease-in-out;
-}
-
-@media (max-width: 450px) {
     .download-btn {
-        display: none;
-    }
-
-    .resume-form {
-        height: 100%;
-        width: 100%;
-        backdrop-filter: blur(12px);
-        overflow-y: scroll;
-        font-size: .9rem;
-        margin-left: 5px;
-        line-height: 1.2;
-    }
-
-    .resume{
-        width: 99%;
+        position: static;
+        justify-content: center;
+        width: fit-content;
     }
 }

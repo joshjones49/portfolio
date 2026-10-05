@@ -32,10 +32,20 @@ const resumeObj = {
     ],
     professionalExperience: [
         {
+            company: 'Oracle',
+            role: 'Datacenter Technician',
+            date: 'June 2026 - Present',
+            bullets: [
+                'Diagnosed and repaired NIC/MPO and Ethernet link faults by cleaning/reseating connections, swapping optics, validating light levels, and correcting cable mislabels.',
+                'Performed link-flap and BER troubleshooting between leaf/spine and GPU devices, then verified stability through LVV, Grafana, and CPV validation.',
+                'Investigated switch/BMC power and management-connectivity failures; when physical remediation did not restore service, escalated to proper channels.'
+            ]
+        },
+        {
             company: 'Lockheed Martin',
             role: 'Technical Intelligence Analyst (Internship)',
             location: '',
-            date: 'Jan 2026',
+            date: 'Jan 2026 - April 2026',
             bullets: [
                 'Conducted in-depth technical research and data analysis on hypersonic glide body technologies, satellite bus architectures, and telemetry anomaly detection patterns.',
                 'Synthesized findings into actionable engineering assessments that directly informed leadership decisions on project feasibility and risk mitigation.'

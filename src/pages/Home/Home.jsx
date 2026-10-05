@@ -16,7 +16,7 @@ const Home = () => {
         <h1>U.S. Army Veteran</h1>
         <h1>Full-Stack Software Developer</h1>
         <div className='location'>
-          <LocationRipple24 className='ripple' /> <h3>Marietta, GA</h3>
+          <LocationRipple24 className='ripple' /> <h3>Hawley, TX</h3>
         </div>
         
       </div>
