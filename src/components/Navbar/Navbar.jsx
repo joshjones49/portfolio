@@ -1,33 +1,24 @@
 import './Navbar.css'
-
-import { Link, useLocation } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 const Navbar = () => {
-
-  const location = useLocation()
-
   const pages = [
-    {path: '/', label: 'ABOUT'},
-    {path: '/resume', label: 'RESUME'},
-    {path: '/projects', label: 'PROJECTS'},
-    // {path: '/contact', label: 'CONTACT'}
+    { path: '/', label: 'About' },
+    { path: '/resume', label: 'Resume' },
+    { path: '/projects', label: 'Projects' }
   ]
 
-  const visibleNavItems = pages.filter(item => item.path !== location.pathname);
-
   return (
-
-    <div className='top-bar' >
-
-      <div className="link-ctn">
-        {visibleNavItems.map((item, index) => (
-          <Link key={index} className='link' to={item.path} >
-            <h1>{item.label}</h1>
-          </Link>
+    <header className="top-bar">
+      <Link to="/" className="brand">Josh Jones</Link>
+      <nav className="link-ctn" aria-label="Main navigation">
+        {pages.map(item => (
+          <NavLink key={item.path} className="link" to={item.path} end>
+            {item.label}
+          </NavLink>
         ))}
-      </div>
-
-    </div>
+      </nav>
+    </header>
   )
 }
 

@@ -16,7 +16,7 @@ export const iconMap = {
   'Git': <SiGit color='#F05032' />,
   'Docker': <SiDocker color='#2496ED' />,
   'Kubernetes': <SiKubernetes color='#326CE5' />,
-  'Linux': <SiLinux color='black' />,
+  'Linux': <SiLinux />,
   'Node.js': <Nodejs />,
   'Spring Boot': <Springboot className='spring-boot' />,
   'Express': <span className='expressjs'>ex</span>,

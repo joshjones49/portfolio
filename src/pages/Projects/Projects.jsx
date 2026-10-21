@@ -46,7 +46,7 @@ const Projects = () => {
             </div>
           ))}
         </div>
-          <a href={item.githubLink} className='github' target='_blank'>
+          <a href={item.githubLink} className='github' target='_blank' rel='noopener noreferrer' aria-label={`View ${item.name} on GitHub`}>
             <GithubSquare className='logo' />
           </a>
         </div>
