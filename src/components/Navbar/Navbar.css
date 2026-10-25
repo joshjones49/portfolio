@@ -1,62 +1,58 @@
 .top-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    min-height: 60px;
-    padding: 0.1rem;
+    gap: 1.5rem;
+    min-height: 80px;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg-base);
 }
-
-.link-ctn {
-    width: min(760px, 100%);
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    gap: 0.45rem;
-    padding: 0.45rem;
-    border-radius: 12px;
-    /* border: 1px solid var(--border);
-    background: var(--surface);
-    box-shadow: var(--shadow); */
-    
-}
-
-.link {
-    color: var(--text-subtle);
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    flex-shrink: 0;
+    font-size: 1.15rem;
+    font-weight: 800;
+    letter-spacing: -0.04em;
     text-decoration: none;
-    border-radius: 999px;
-    padding: 0.52rem 0.95rem;
-    transition: background-color 0.22s ease, color 0.22s ease;
 }
-
-.link h1 {
-    font-size: 0.73rem;
-    letter-spacing: 0.08em;
-    font-weight: 700;
+.brand::before {
+    content: 'J';
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 27px;
+    border-radius: 8px;
+    background: #ff0033;
+    color: white;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 0;
 }
-
-.link:hover {
-    background: var(--accent-soft);
-    color: var(--accent);
+.link-ctn { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    background: #272727;
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: background-color 0.18s ease, color 0.18s ease;
 }
-
-@media (max-width: 900px) {
-    .top-bar {
-        justify-content: center;
-        min-height: auto;
-    }
-
-    .link-ctn {
-        justify-content: center;
-        gap: 0.45rem;
-        width: 100%;
-    }
-
-    .link {
-        padding: 0.45rem 0.75rem;
-    }
-
-    .link h1 {
-        font-size: 0.66rem;
-        letter-spacing: 0.06em;
-    }
+.link:hover { background: #3f3f3f; }
+.link.active { background: var(--text-main); color: var(--bg-base); }
+@media (max-width: 600px) {
+    .top-bar { position: relative; flex-direction: column; align-items: flex-start; gap: 1rem; }
+    .link-ctn { width: 100%; }
+    .link { flex: 1; padding: 0.5rem 0.75rem; }
 }

@@ -1,90 +1,57 @@
 .info {
-    position: relative;
+    position: sticky;
+    top: 108px;
     width: 100%;
-    height: 100%;
-    min-height: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    gap: 1rem;
-    padding: 4.2rem 1rem 1rem;
-    border-radius: 12px;
+    gap: 1.1rem;
+    padding: 2rem 1.1rem 1.25rem;
+    border-radius: 16px;
     border: 1px solid var(--border);
     background: var(--surface);
-    box-shadow: var(--shadow);
+    overflow: hidden;
 }
-
 .info::before {
     content: '';
     position: absolute;
     inset: 0 0 auto;
-    height: 60px;
-    border-radius: 12px 12px 0 0;
-    background: linear-gradient(90deg, #0a66c2 0%, #378fe9 100%);
+    height: 4px;
+    background: #ff0033;
 }
-
 .photo {
-    width: min(78%, 176px);
-    aspect-ratio: 1 / 1;
+    width: min(100%, 164px);
+    aspect-ratio: 1;
     object-fit: cover;
-    border-radius: 999px;
-    border: 4px solid #ffffff;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.14);
-    position: relative;
-    z-index: 1;
+    border-radius: 50%;
+    border: 4px solid var(--surface-strong);
 }
-
-.icons {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 0.5rem;
-}
-
+.profile-caption { text-align: center; }
+.profile-caption strong { display: block; font-size: 1.1rem; }
+.profile-caption p { margin: 0.3rem 0 0; color: var(--text-subtle); font-size: 0.8rem; }
+.icons { width: 100%; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.5rem; }
 .social {
-    font-size: clamp(1.85rem, 2.2vw, 2rem);
-    min-height: 52px;
+    min-height: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
     border: 1px solid var(--border);
-    border-radius: 10px;
-    background: #ffffff;
-    color: var(--accent);
+    border-radius: 50%;
+    background: var(--surface-strong);
+    color: var(--text-main);
     text-decoration: none;
-    transition: background-color 0.2s ease, color 0.2s ease;
+    font-size: 1.6rem;
+    transition: background-color 0.18s ease, border-color 0.18s ease;
 }
-
-.social:hover {
-    background: var(--accent-soft);
-    color: var(--accent-strong);
-}
-
-.info > .download-btn {
-    display: none;
-}
-
+.social:hover { background: #383838; border-color: #666; }
 @media (max-width: 900px) {
-    .info {
-        padding: 3.5rem 0.85rem 0.85rem;
-        gap: 0.8rem;
-    }
-
-    .info::before {
-        height: 58px;
-    }
-
-    .photo {
-        width: min(56vw, 150px);
-    }
-
-    .icons {
-        max-width: 320px;
-    }
-
-    .social {
-        min-height: 54px;
-        font-size: 2rem;
-    }
+    .info { position: relative; top: auto; flex-direction: row; flex-wrap: wrap; justify-content: flex-start; padding: 1rem; gap: 1rem; }
+    .photo { width: 76px; }
+    .profile-caption { text-align: left; }
+    .icons { width: auto; margin-left: auto; }
+    .social { width: 44px; min-height: 44px; font-size: 1.4rem; }
+}
+@media (max-width: 480px) {
+    .icons { width: 100%; margin-left: 0; }
+    .social { width: 100%; border-radius: 8px; }
 }

@@ -1,50 +1,41 @@
 import './Home.css'
-
 import { LocationRipple24 } from '../../components/SVGs/location'
-
 import { iconMap } from '../Projects/getTechIcons'
 
 const Home = () => {
-
-
-
   return (
-    <div className='home pages' >
-
-      <div className='header' >
+    <main className="home pages">
+      <div className="header">
+        <p className="eyebrow">U.S. Army Veteran</p>
         <h1>Josh Jones</h1>
-        <h1>U.S. Army Veteran</h1>
-        <h1>Full-Stack Software Developer</h1>
-        <div className='location'>
-          <LocationRipple24 className='ripple' /> <h3>Hawley, TX</h3>
+        <p className="role">Full-Stack Software Developer</p>
+        <div className="location">
+          <LocationRipple24 aria-hidden="true" />
+          <span>Hawley, TX</span>
         </div>
-        
       </div>
 
-      <div className='summary-ctn'>
+      <div className="summary-ctn">
+        <section className="hobbies home-ctns" aria-labelledby="about-heading">
+          <h2 id="about-heading">About me</h2>
+          <p className="about-bio">
+            I'm Josh, a U.S. Army veteran and software developer based in Hawley, Texas. I bring the leadership and attention to detail I developed as a Cavalry Scout Section Leader to building practical, reliable software. My projects range from full-stack applications built with React, Angular, Java/Spring Boot, and PostgreSQL to a C++ telemetry simulation focused on concurrency, memory management, and automated testing. Alongside my development work, I troubleshoot datacenter hardware and network connectivity at Oracle, building on earlier experience in technical research and data analysis. I'm currently pursuing my online bachelor's degree in Computer Science at Louisiana State University of Alexandria (LSUA), deepening my understanding of the systems behind the software I build.
+          </p>
+        </section>
 
-        <div className="skills home-ctns">
-          <h1>Technologies & Languages</h1>
-          <div className='tech' >
-            {Object.values(iconMap).map((icon, index) => (
-              <div key={index} className="tech-item">
-                <div>{icon}</div>
+        <section className="skills home-ctns" aria-labelledby="tech-heading">
+          <h2 id="tech-heading">Technologies &amp; languages</h2>
+          <div className="tech">
+            {Object.entries(iconMap).map(([name, icon]) => (
+              <div key={name} className="tech-item">
+                <div aria-hidden="true">{icon}</div>
+                <span>{name}</span>
               </div>
             ))}
           </div>
-        </div>
-
-        <div className="hobbies home-ctns">
-          <h1>About</h1>
-          <div className="hobbies-list">
-            <p className='about-bio'>
-              Software developer with a mix of full-stack web development, systems programming, and real-world technical problem-solving. Comfortable working in C++, Java/Spring Boot, Angular, and PostgreSQL, and enjoys building things that are solid and maintainable.
-            </p>
-          </div>
-        </div>
-
+        </section>
       </div>
-    </div>
+    </main>
   )
 }
 
