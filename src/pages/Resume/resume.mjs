@@ -75,6 +75,7 @@ const resumeObj = {
         ]
     },
     educationAndCertificates: [
+        'Louisiana State University of Alexandria Online Bachelors, Computer Science | June 2026 - Present',
         'Become a C++ Pro: Ultimate Developer Guide (Coursera) | Dec 2025 - Mar 2026',
         'Cook Systems FastTrack Java Program | April 2025 - May 2025',
         'Galvanize Coding Bootcamp | Oct 2023 - Feb 2024'

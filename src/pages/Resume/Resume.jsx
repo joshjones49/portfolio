@@ -1,7 +1,7 @@
 import './Resume.css'
 
 import { IoMdDownload } from "react-icons/io";
-import resumePDF from '../../assets/SD_Joshua_Jones_4.pdf';
+import resumePDF from '../../assets/SD_Joshua_Jones_5.pdf';
 import resumeObj from './resume.mjs'
 
 const Resume = () => {
