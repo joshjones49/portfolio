@@ -21,7 +21,7 @@
     letter-spacing: -0.04em;
     text-decoration: none;
 }
-.brand::before {
+/* .brand::before {
     content: 'J';
     display: grid;
     place-items: center;
@@ -33,7 +33,7 @@
     font-size: 1rem;
     font-weight: 800;
     letter-spacing: 0;
-}
+} */
 .link-ctn { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 .link {
     display: inline-flex;
