@@ -15,7 +15,6 @@ const Info = () => {
         <img src="https://avatars.githubusercontent.com/u/143196112?s=400&u=327e8df978240c5aa3419d86cd61e4d70dc6f769&v=4" alt='Josh Jones' className="photo" />
       
           <div className="profile-caption">
-            <strong>Josh Jones</strong>
             <p>Developer · Veteran · Student</p>
           </div>
 

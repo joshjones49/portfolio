@@ -10,7 +10,6 @@ const Navbar = () => {
 
   return (
     <header className="top-bar">
-      <Link to="/" className="brand">Josh Jones</Link>
       <nav className="link-ctn" aria-label="Main navigation">
         {pages.map(item => (
           <NavLink key={item.path} className="link" to={item.path} end>
