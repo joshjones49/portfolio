@@ -25,7 +25,7 @@ const Info = () => {
       
           <div className="icons">
             <a href="https://github.com/joshjones49" target='_blank' className='social'>
-              <GithubSquare />
+              <GithubSquare color='black' />
             </a>
 
             <a href="https://www.linkedin.com/in/joshjones49/" target='_blank' className='social'>
