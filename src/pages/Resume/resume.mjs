@@ -9,19 +9,29 @@ const resumeObj = {
         portfolioLink: 'https://github.com/joshjones49'
     },
     projectList: [
+        // {
+        //     title: 'Simple Telemetry Processing Simulation',
+        //     stack: 'C++',
+        //     date: 'Feb 2026',
+        //     bullets: [
+        //         'Engineered an object-oriented, extensible sensor processing system simulating aerospace telemetry data (altitude, velocity) using polymorphism, inheritance, and factory design.',
+        //         'Implemented thread-safe logging and memory management using RAII to ensure reliable concurrent operation and resource cleanup.',
+        //         'Developed CMake-based build system and comprehensive Google Test suite for automated verification of simulation accuracy, threshold monitoring, and fault detection logic.'
+        //     ]
+        // },
         {
-            title: 'Simple Telemetry Processing Simulation',
-            stack: 'C++',
+            title: 'SmartCard',
+            stack: 'React, JavaScript, Node.js, Express.js, PostgreSQL',
             date: 'Feb 2026',
             bullets: [
-                'Engineered an object-oriented, extensible sensor processing system simulating aerospace telemetry data (altitude, velocity) using polymorphism, inheritance, and factory design.',
-                'Implemented thread-safe logging and memory management using RAII to ensure reliable concurrent operation and resource cleanup.',
-                'Developed CMake-based build system and comprehensive Google Test suite for automated verification of simulation accuracy, threshold monitoring, and fault detection logic.'
+                'Developed a full-stack flashcard application using React and JavaScript, with React Router for client-side routing and the Context API for centralized state management.',
+                'Built RESTful APIs using Node.js and Express.js, integrating a PostgreSQL relational database to support CRUD operations and persistent data storage.',
+                'Implemented authentication and authorization using JSON Web Tokens (JWT), with bcrypt password hashing to protect user credentials.'
             ]
         },
         {
             title: 'Project Management Dashboard',
-            stack: 'Java',
+            stack: 'Java, Spring Boot, Angular, PostgreSQL',
             date: 'May 2025',
             bullets: [
                 'Collaborated in a 4-person Agile team to deliver a full-stack dashboard managing User, Project, Team, Company, and Announcement entities using Java Spring Boot, Angular/TypeScript, and PostgreSQL.',
