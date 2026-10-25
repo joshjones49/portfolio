@@ -19,7 +19,7 @@ const Home = () => {
         <section className="hobbies home-ctns" aria-labelledby="about-heading">
           <h2 id="about-heading">About me</h2>
           <p className="about-bio">
-            I'm Josh, a U.S. Army veteran and software developer based in Hawley, Texas. I bring the leadership and attention to detail I developed as a Cavalry Scout Section Leader to building practical, reliable software. My projects range from full-stack applications built with React, Angular, Java/Spring Boot, and PostgreSQL to a C++ telemetry simulation focused on concurrency, memory management, and automated testing. Alongside my development work, I troubleshoot datacenter hardware and network connectivity at Oracle, building on earlier experience in technical research and data analysis. I'm currently pursuing my online bachelor's degree in Computer Science at Louisiana State University of Alexandria (LSUA), deepening my understanding of the systems behind the software I build.
+            U.S. Army veteran and software developer living in Hawley, Texas. My projects range from full-stack applications built with React, Angular, Java/Spring Boot, and PostgreSQL to a C++ telemetry simulation focused on concurrency, memory management, and automated testing. Alongside my development side projects, I troubleshoot datacenter hardware and network connectivity at Oracle, building on earlier experience in technical research and data analysis. I'm currently pursuing my online bachelor's degree in Computer Science at Louisiana State University of Alexandria (LSUA), deepening my understanding of the systems behind the software I build.
           </p>
         </section>
 
